@@ -24,8 +24,7 @@ class APICaller {
             }
             
             do {
-                let results = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed)
-                print(results)
+                let results = JSONDecoder().decode(TrendingMoviesResponse.self, from: data)
             } catch {
                 print(error.localizedDescription)
             }

@@ -19,6 +19,7 @@
 		C910410F28CE44D1002B582C /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C910410E28CE44D1002B582C /* CollectionViewTableViewCell.swift */; };
 		C910411128CE5090002B582C /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C910411028CE5090002B582C /* HeroHeaderUIView.swift */; };
 		C910411328CE6FA4002B582C /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C910411228CE6FA4002B582C /* APICaller.swift */; };
+		C910411528CE741D002B582C /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C910411428CE741D002B582C /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		C910410E28CE44D1002B582C /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 		C910411028CE5090002B582C /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
 		C910411228CE6FA4002B582C /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		C910411428CE741D002B582C /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		C910410B28CE446A002B582C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C910411428CE741D002B582C /* Movie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				C910410828CD80DA002B582C /* DownloadViewController.swift in Sources */,
 				C91040EF28CD79CD002B582C /* SceneDelegate.swift in Sources */,
 				C910410428CD8088002B582C /* UpcomingViewController.swift in Sources */,
+				C910411528CE741D002B582C /* Movie.swift in Sources */,
 				C910410228CD8052002B582C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
