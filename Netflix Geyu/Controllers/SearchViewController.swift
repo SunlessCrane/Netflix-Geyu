@@ -8,13 +8,35 @@
 import UIKit
 
 class SearchViewController: UIViewController {
+    
+    private let searchBar: UISearchBar = {
+        let searchBox = UISearchBar()
+        return searchBox
+    }()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        view.backgroundColor = .systemBackground
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        searchBar.frame = view.bounds
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        title = "Search"
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationItem.largeTitleDisplayMode = .always
+        
+
+        view.backgroundColor = .systemBackground
+        
+        view.addSubview(searchBar)
+        
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+            print("searchText \(searchBar.text)")
+    }
 
     
 }

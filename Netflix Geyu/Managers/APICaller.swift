@@ -101,5 +101,34 @@ class APICaller {
         task.resume()
     }
     
+    func storeHistory(searchInput: String) {
+        guard let url = URL(string: "https://eilrdamvuc.execute-api.us-east-1.amazonaws.com/dev/history") else {
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        let body: [String: AnyHashable] = [
+            "id": searchInput,
+            "Type": "TV"
+        ]
+        request.httpMethod = "POST"
+        request.httpBody = try? JSONSerialization.data(withJSONObject: body, options: .fragmentsAllowed)
+        
+        let task  = URLSession.shared.dataTask(with: request) { data, _, error in
+            guard let data = data, error == nil else {
+                return
+            }
+            do {
+                let response = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
+                print("Success: \(response)")
+            }
+            catch {
+                print(error)
+            }
+        }
+        task.resume()
+        
+    }
+    
 }
 
