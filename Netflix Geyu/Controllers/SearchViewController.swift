@@ -32,6 +32,7 @@ class SearchViewController: UIViewController {
         
         view.addSubview(searchBar)
         APICaller.shared.storeHistory(searchInput: "Better Call Saul")
+        APICaller.shared.storeHistory(searchInput: "White Collar")
     }
 
     
