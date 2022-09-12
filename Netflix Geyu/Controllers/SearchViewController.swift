@@ -31,11 +31,7 @@ class SearchViewController: UIViewController {
         view.backgroundColor = .systemBackground
         
         view.addSubview(searchBar)
-        
-    }
-    
-    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
-            print("searchText \(searchBar.text)")
+        APICaller.shared.storeHistory(searchInput: "Better Call Saul")
     }
 
     
